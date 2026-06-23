@@ -27,15 +27,15 @@
 ## 🚀 Services 
 *Every time you cross a "bridge," add the Docker Compose logic here.*
 
-| Service                   | Purpose                 | Tech       | Status    |
-| :------------------------ | :---------------------- | :--------- | :-------- |
-| **CasaOS**                | Management Dashboard    | Docker     | ✅ Live    |
-| **Immich**                | Multi-user Photo Backup | Docker     | ⏳ Planned |
-| **[[00 Jellyfin]]**       | Media Streaming         | Docker     | ✅ Live    |
-| **Uptime Kuma**           | System Monitoring       | Docker     | ✅ Live    |
-| **n8n**                   | SaaS Automation         | Docker     | ⏳ Planned |
-| **[[00 Windows VM]]**     | Safe Testing Zone       | KVM/Docker | ✅ Live    |
-| **[[00 Homenetwork CA]]** |                         |            |           |
+| Service                   | Purpose                                                                                                              | Tech                                                      | Status    |
+| :------------------------ | :------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------- | :-------- |
+| **CasaOS**                | Management Dashboard                                                                                                 | Docker                                                    | ✅ Live    |
+| **Immich**                | Multi-user Photo Backup                                                                                              | Docker                                                    | ⏳ Planned |
+| **[[00 Jellyfin]]**       | Media Streaming                                                                                                      | Docker                                                    | ✅ Live    |
+| **Uptime Kuma**           | System Monitoring                                                                                                    | Docker                                                    | ✅ Live    |
+| **n8n**                   | SaaS Automation                                                                                                      | Docker                                                    | ⏳ Planned |
+| **[[00 Windows VM]]**     | Safe Testing Zone                                                                                                    | KVM/Docker                                                | ✅ Live    |
+| **[[00 Homenetwork CA]]** | Private Certificate Authority to secure local services with private HTTPS/TLS and eliminate browser warning screens. | Docker / `step-ca` (Automated) & OpenSSL (Manual Testing) | ⏳ Planned |
 
 ---
 
