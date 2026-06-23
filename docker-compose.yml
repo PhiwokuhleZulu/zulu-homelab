@@ -1,0 +1,51 @@
+version: "3.8"
+
+services:
+  uptime-kuma:
+    image: louislam/uptime-kuma:latest
+    container_name: uptime-kuma
+    ports:
+      - "3001:3001"
+    volumes:
+      - /home/kuhle/uptime-kuma:/app/data
+    restart: always
+
+  jellyfin:
+    image: linuxserver/jellyfin:10.10.7
+    container_name: jellyfin
+    ports:
+      - "8097:8096"
+      - "8921:8920"
+      - "7359:7359/udp"
+      - "1901:1900/udp"
+    volumes:
+      - /DATA/AppData/jellyfin:/config
+      - /DATA/Media/Movies:/data/movies
+      - /DATA/Media/TV Shows:/data/tvshows
+    restart: unless-stopped
+
+ windows-vm:
+    image: dockurr/windows:latest
+    container_name: windows
+    ports:
+      - "8006:8006"
+      - "3389:3389/tcp"
+      - "3389:3389/udp"
+    environment:
+      VERSION: "11"
+      REGION: "en-US"
+      KEYBOARD: "en-US"
+      USERNAME: "kuhle"
+      PASSWORD: "70128372"
+      RAM_SIZE: "8G"
+      CPU_CORES: "4"
+      DISK_SIZE: "100G"
+    devices:
+      - /dev/kvm
+      - /dev/net/tun
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - /home/kuhle/windows-vm/win11_data:/storage
+    restart: always
+
