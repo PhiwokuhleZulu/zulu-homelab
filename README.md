@@ -3,7 +3,7 @@
 
 ---
 
-## 🛠️ The Architecture (The "How-To")
+## 🛠️ The Architecture 
 *Use this section to explain the technical layers of your project.*
 
 ### 1. Hardware & OS
@@ -24,7 +24,7 @@
 
 ---
 
-## 🚀 Services (The App Stack)
+## 🚀 Services 
 *Every time you cross a "bridge," add the Docker Compose logic here.*
 
 | Service                   | Purpose                 | Tech       | Status    |
@@ -36,23 +36,6 @@
 | **n8n**                   | SaaS Automation         | Docker     | ⏳ Planned |
 | **[[00 Windows VM]]**     | Safe Testing Zone       | KVM/Docker | ✅ Live    |
 | **[[00 Homenetwork CA]]** |                         |            |           |
-
----
-
-## 📸 Proof of Concept (Screenshots/Visuals)
-*Store your "receipts" here for your LinkedIn post later.*
-
-- [ ] **Terminal:** Screenshot of the `ip addr` and `df -h` after storage expansion.
-- [ ] **Dashboard:** Screenshot of the CasaOS main UI showing active containers.
-- [ ] **Remote Access:** Photo of streaming Jellyfin on a Smart TV or phone via Tailscale.
-- [ ] **Diagram:** 
-
----
-
-## 📝 Professional Summary (For LinkedIn/Portfolio)
-*Copy and paste this once the project is stable.*
-
-> "Architected and deployed a private cloud infrastructure on bare-metal ASUS hardware. Managed a 1TB LVM-based storage pool and orchestrated a suite of Dockerized services including automation (n8n), media streaming (Jellyfin), and multi-user storage (Immich). Implemented a zero-trust remote access model using Cloudflare Tunnels and Tailscale VPN, eliminating the need for traditional port forwarding while maintaining enterprise-grade security."
 
 ---
 
